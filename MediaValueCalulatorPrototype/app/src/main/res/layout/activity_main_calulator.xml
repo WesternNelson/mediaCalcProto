@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="western.ben.mediavaluecalulatorprototype.MainCalulatorActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+
+    <TextView
+        android:id="@+id/channelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Channel"
+        android:layout_marginStart="16dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vehiclePowerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vehicle Power"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/qualityTextView"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/channelTextView"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toRightOf="@+id/qualityTextView" />
+
+    <TextView
+        android:id="@+id/qualityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quality"
+        android:layout_marginStart="16dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/vehiclePowerTextView"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/impressionsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Impressions"
+        android:layout_marginStart="16dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="23dp"
+        app:layout_constraintTop_toBottomOf="@+id/qualityTextView"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/cpmTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CPM"
+        android:layout_marginStart="50dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="47dp"
+        app:layout_constraintTop_toBottomOf="@+id/impressionsTextView"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/mediaValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MediaValue"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/cpmTextView"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/cpmTextView" />
+
+    <ToggleButton
+        android:id="@+id/aToggleButton"
+        android:layout_width="80dp"
+        android:layout_height="36dp"
+        android:background="@drawable/btn_toggle"
+        android:text="A"
+        android:textOff="A"
+        android:textOn="A"
+        app:layout_constraintLeft_toLeftOf="@+id/premiumToggleButton"
+        app:layout_constraintRight_toRightOf="@+id/premiumToggleButton"
+        app:layout_constraintTop_toBottomOf="@+id/filmToggleButton"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <ToggleButton
+        android:id="@+id/filmToggleButton"
+        android:layout_width="80dp"
+        android:layout_height="36dp"
+        android:background="@drawable/btn_toggle"
+        android:text="film"
+        android:textOff="Film"
+        android:textOn="Film"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvToggleButton"
+        app:layout_constraintLeft_toLeftOf="@+id/aToggleButton"
+        app:layout_constraintRight_toRightOf="@+id/aToggleButton"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="91dp"
+        />
+
+    <ToggleButton
+        android:id="@+id/tvToggleButton"
+        android:layout_width="80dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="82dp"
+        android:background="@drawable/btn_toggle"
+        android:text="TV"
+        android:textOff="TV"
+        android:textOn="TV"
+        app:layout_constraintBaseline_toBaselineOf="@+id/digitalToggleButton"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <ToggleButton
+        android:id="@+id/digitalToggleButton"
+        android:layout_width="80dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="1dp"
+        android:background="@drawable/btn_toggle"
+        android:text="digital"
+        android:textOff="dgtl"
+        android:textOn="dgtl"
+        app:layout_constraintLeft_toRightOf="@+id/tvToggleButton"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <ToggleButton
+        android:id="@+id/bToggleButton"
+        android:layout_width="80dp"
+        android:layout_height="36dp"
+        android:background="@drawable/btn_toggle"
+        android:text="B"
+        android:textOff="B"
+        android:textOn="B"
+        app:layout_constraintLeft_toLeftOf="@+id/tvToggleButton"
+        app:layout_constraintRight_toRightOf="@+id/tvToggleButton"
+        app:layout_constraintTop_toBottomOf="@+id/tvToggleButton"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <ToggleButton
+        android:id="@+id/cToggleButton"
+        android:layout_width="80dp"
+        android:layout_height="36dp"
+        android:background="@drawable/btn_toggle"
+        android:text="C"
+        android:textOff="C"
+        android:textOn="C"
+        app:layout_constraintLeft_toLeftOf="@+id/digitalToggleButton"
+        app:layout_constraintRight_toRightOf="@+id/digitalToggleButton"
+        app:layout_constraintTop_toBottomOf="@+id/digitalToggleButton"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <ToggleButton
+        android:id="@+id/premiumToggleButton"
+        android:layout_width="80dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/btn_toggle"
+        android:text="premium"
+        android:textOff="Premium"
+        android:textOn="Premium"
+        app:layout_constraintRight_toLeftOf="@+id/bToggleButton"
+        app:layout_constraintTop_toBottomOf="@+id/aToggleButton"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <ToggleButton
+        android:id="@+id/prominentToggleButton"
+        android:layout_width="80dp"
+        android:layout_height="36dp"
+        android:background="@drawable/btn_toggle"
+        android:text="prominent"
+        android:textOff="Prominent"
+        android:textOn="Prominent"
+        app:layout_constraintLeft_toLeftOf="@+id/bToggleButton"
+        app:layout_constraintRight_toRightOf="@+id/bToggleButton"
+        app:layout_constraintTop_toBottomOf="@+id/bToggleButton"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <ToggleButton
+        android:id="@+id/standardToggleButton"
+        android:layout_width="80dp"
+        android:layout_height="36dp"
+        android:background="@drawable/btn_toggle"
+        android:text="standard"
+        android:textOff="Standard"
+        android:textOn="Standard"
+        app:layout_constraintLeft_toLeftOf="@+id/cToggleButton"
+        app:layout_constraintRight_toRightOf="@+id/cToggleButton"
+        app:layout_constraintTop_toBottomOf="@+id/cToggleButton"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <EditText
+        android:id="@+id/impressionEditText"
+        android:layout_width="215dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/background_light"
+        android:ems="15"
+        android:gravity="end"
+        android:hint="$00.00"
+        android:inputType="number"
+        android:textColor="@android:color/black"
+        app:layout_constraintLeft_toLeftOf="@+id/premiumToggleButton"
+        app:layout_constraintTop_toTopOf="@+id/impressionsTextView" />
+
+    <EditText
+        android:id="@+id/cpmEditText"
+        android:layout_width="215dp"
+        android:layout_height="20dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="171dp"
+        app:layout_constraintTop_toTopOf="@+id/cpmTextView"
+        app:layout_constraintLeft_toLeftOf="@+id/impressionEditText"
+        android:background="@android:color/background_light"
+        android:gravity="end"
+        android:editable="false"/>
+
+    <EditText
+        android:id="@+id/mediaValueEditText"
+        android:layout_width="215dp"
+        android:layout_height="20dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="203dp"
+        app:layout_constraintTop_toTopOf="@+id/mediaValueTextView"
+        app:layout_constraintLeft_toLeftOf="@+id/cpmEditText"
+        android:background="@android:color/background_light"
+        android:gravity="end"/>
+
+</android.support.constraint.ConstraintLayout>
